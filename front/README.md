@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 2022.10.14 - 주제 설정, 레이아웃 완료
 
-## Getting Started
+주제 설정 : 꺼무위키 사이트 만들기
 
-First, run the development server:
+프로젝트명 : turnOffWiki
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- intro
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  나무위키를 보다가 위키 사이트를 하나 만들어보면 어떨까 생각이 들었다. 이유는 일단 재미있을 것 같고,
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+  지금까지 배운 프론트, 백, 컨트랙트 모두를 적절히 배우고 활용할만한 기능을 넣을 수 있을 것 같아서..
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+  결과가 아주 나쁘지 않다면 동일 토큰을 공유하는 다른 어플리케이션을 만드는 것도 좋겠다.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- front-end
 
-## Learn More
+  - nextjs 사용 - 위키내에 존재할 문서들이 제목으로도 검색 엔진에 걸리게 하고 싶음
+  - redux-toolkit < 이거 넥스트js에 사용 가능한가? 찾아볼것
+  - oauth login < DID 프로젝트때 한 거 + 카카오 로그인을 사용 하고 싶다
+  - 메타마스크 로그인을 하고 이 상태로 위키에 기여하면 토큰을 준다.
 
-To learn more about Next.js, take a look at the following resources:
+- back-end
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  - ts 사용, 라우터의 layer를 잘 나눠서 해보자.
+  - orm은 시퀄라이즈를 사용하되, join등의 기능을 적극 활용해볼것
+  - dotenv, res.local, cors 등 확실히 이해가 가지 않는 부분은 공부해볼 예정
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- BlockChain
 
-## Deploy on Vercel
+  - web3를 이용해 bc network와 통신
+  - private eth network를 다시 setup 해보고 싶다
+  - 우선 생각나는 기능은 로그인이지만, 추가적인 다른 기능도 있으면 좋겠다.
+  - 문서 생성, 편집자 등 위키에 기여하는 사람들에게 코인을 발급
+  - 가끔 기념으로 nft도 준다. 이건 토큰을 이용해 구매하거나, 교환도 가능하게 하고 싶다.
+  - truffle 대신 hardhat을 배워서 써보면 좋을 것 같다.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 배포
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  - 실제로 배포를 하진 않는다.
+  - nginx, pm2등 관련 라이브러리에 대한 공부는 해둘 것
