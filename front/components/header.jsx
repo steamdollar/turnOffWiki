@@ -3,7 +3,7 @@ import styled from "styled-components";
 const HeaderComponent = styled.div`
   padding: 0 15%;
   width: 100%;
-  min-height: 30px;
+  min-height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,10 +17,9 @@ const StyledLogo = styled.div`
 `;
 
 const StyledFunc = styled.div`
-  width: 45%;
+  width: 55%;
   height: 100%;
-  min-height: 50px;
-  border: 1px solid #000;
+  min-height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,14 +28,14 @@ const StyledFunc = styled.div`
 
   > span {
     text-align: center;
-    border-right: 1px solid white;
     display: inline-block;
     height: 100%;
+    margin: 0 2%;
   }
 
   > input {
     width: 70%;
-    height: 100%;
+    height: 40px;
   }
 `;
 
@@ -53,7 +52,7 @@ const Header = () => {
       <StyledFunc>
         <span>random</span>
         <input />
-        <span>검색</span>
+        <span>🔍</span>
         <span>login</span>
       </StyledFunc>
     </HeaderComponent>
