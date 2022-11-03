@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
 const ListBox = styled.span`
-  width: 18%;
-  height: 50%;
+  width: 17%;
+  height: 35%;
   min-height: 200px;
   border: 1px solid blue;
   position: absolute;
-  right: 1%;
-  padding: 1.5% 2%;
+  right: 1.2%;
+  padding: 1% 2.2%;
+  margin-top: 0.5%;
 
   > div {
     width: 60%;
     font-size: 24px;
     margin: 0 auto;
+    text-align : center;
   }
 
   > ul {
@@ -21,7 +23,7 @@ const ListBox = styled.span`
     text-align: center;
 
     > li {
-      margin: 1.5% 0 1.5% 0;
+      margin: 2.5% 0 2.5% 0;
     }
   }
 `;
@@ -31,16 +33,15 @@ const RecentChange = () => {
     <ListBox>
       <div>최근 변경 항목</div>
       <ul>
-        <li>1111</li>
-        <li>1111</li>
-        <li>1111</li>
-        <li>1111</li>
-        <li>1111</li>
-        <li>1111</li>
-        <li>1111</li>
-        <li>1111</li>
-        <li>1111</li>
-        <li>1111</li>
+        <li>qwertyuiopasdfghj</li>
+        <li>qwertyuiopasdfghj</li>
+        <li>qwertyuiopasdfghj</li>
+        <li>qwertyuiopasdfghj</li>
+        <li>qwertyuiopasdfghj</li>
+        <li>qwertyuiopasdfghj</li>
+        <li>qwertyuiopasdfghj</li>
+        <li>qwertyuiopasdfghj</li>
+        <li>qwertyuiopasdfghj</li>
       </ul>
     </ListBox>
   );

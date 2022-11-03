@@ -8,7 +8,7 @@ const HeaderComponent = styled.div`
   justify-content: space-between;
   align-items: center;
   background: #b7d3e9;
-  font-size: 20px;
+  font-size: 17px;
   box-sizing: border-box;
 `;
 
@@ -20,21 +20,19 @@ const StyledFunc = styled.div`
   width: 55%;
   height: 100%;
   min-height: 40px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 1%;
-  font-size: 16px;
+  font-size: 17px;
 
   > span {
     text-align: center;
     display: inline-block;
     height: 100%;
-    margin: 0 2%;
+    margin: 0 1.5% 0 1%;
   }
 
   > input {
-    width: 70%;
+    width: 68%;
     height: 40px;
   }
 `;
