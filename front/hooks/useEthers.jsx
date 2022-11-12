@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Web3 from 'web3/dist/web3.min'
+import { ethers } from 'ethers'
 
 const useEthers = () => {
     const [ account, setAccount ] = useState(null)
@@ -16,9 +16,9 @@ const useEthers = () => {
                 method : 'eth_requestAccounts'
             })
             setAccount(address)
-
-            const web3 = new Web3(window.ethereum)
-            setWeb3(web3)
+            
+            const provider = new ethers.providers.Web3Provider(window.ethereum)
+            setWeb3(provider)
         })()
     }, [])
     return [web3, account, error]
