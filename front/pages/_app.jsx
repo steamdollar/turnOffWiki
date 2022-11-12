@@ -6,6 +6,8 @@ import useEthers from "../hooks/useEthers";
 function MyApp({ Component, pageProps }) {
   const [ web3, account, error ] = useEthers()
 
+  console.log(web3)
+
   if(!account || error) return 'metamask로 로그인 해주세요'
 
   return (
