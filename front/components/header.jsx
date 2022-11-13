@@ -51,7 +51,6 @@ const Header = () => {
         <span>random</span>
         <input />
         <span>🔍</span>
-        <span>login</span>
       </StyledFunc>
     </HeaderComponent>
   );
